@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi primer form</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Hola, este es mi primer formulario</h1>
+    <h4>Por favor, rellena con los siguientes datos, para registrarte</h4>
+    <form  name = "myForm" onsubmit = "return(validate());" action="/test" method="post">
+        <label for="name">Nombre</label>
+        <input  type="text" name="name" id="name">
+       
+        <label for="lastName">Apellido</label>
+        <input  type="text" name="lastName" id="lastName">
+
+        <label for="lastName">Email</label>
+        <input  type="email" name="email" id="">
+       
+        <label for="address">Domicilio</label>
+        <input  type="text" name="address" id="">
+       
+        <label for="document">Documento</label>
+        <input  type="text" name="document" id="">
+     
+        <label for="">Seleccione Tipo De Cuenta</label>
+        <select name="accountType" id="">
+            <option value = "-1" selected>[Elija la suya]</option>
+            <option value="1">Cuenta Empresarial</option>
+            <option value="2">Cuenta Personal</option>
+            <option value="3">Cuenta Estudiante</option>
+        </select>
+        
+        <input type="submit" value="REGISTRARME">
+    </form>
+   
+    
+</body>
+</html>
